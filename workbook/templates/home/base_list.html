@@ -1,0 +1,25 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+{% if object_list %}
+
+{% for object in object_list %}
+
+<div class=content_list>
+
+	{% if object.image %}
+	<img class=thumbnail src="{{object.image.url}}" alt="img">
+	{%  endif %}
+
+	<hi class=description> {{object}} <a href = "{% url urlpath pk=object.pk %}"> detail </a> </hi>
+
+</div>
+
+{% endfor %}
+
+{% else %}
+<p>No object are available</p>
+{% endif %}
+
+{% endblock %}

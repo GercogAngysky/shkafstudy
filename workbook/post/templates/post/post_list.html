@@ -1,0 +1,30 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+{% for object in object_list %}
+
+<div class=wrap>
+	<div class=wrap-content>
+		<div class=post-header>
+			<hi class=post-title>{{ object.title }}</hi>
+			<span calss=post-date>{{ object.created_date }}</span>
+		</div>
+
+		{% if object.photo %}
+		<img class=post-image src="{{object.photo.url}}" alt="img">
+		{% endif %}
+
+		<div class=post-content>{{ object.text|linebreaks }}</div>
+	</div>
+
+	{% if user.is_authenticated %}
+	<div class=post-edit >
+		<a href = "{% url 'post_detail' pk=object.pk %}"> edit </a>
+	</div>
+	{% endif %}
+</div>
+
+{% endfor %}
+
+{% endblock %}

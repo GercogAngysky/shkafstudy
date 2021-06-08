@@ -1,0 +1,32 @@
+<!-- {% extends 'home/base.html' %}
+
+{% block content %}
+
+    {% if object %}
+
+        <div>
+
+      <div class="list-group">
+
+      {% for key in object._meta.fields %}
+         <p class="list-group-item"> {{ key }} </p>
+      {% endfor %}
+
+    </div>
+
+      {% if user.is_authenticated %}
+      <a class="btn btn-default" href="{% url urlpath_update object.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+      <a class="btn btn-default" href="{% url urlpath_delete object.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+      {% endif %}
+
+        </div>
+
+  {% else %}
+
+    <p>No date</p>
+
+  {% endif %}
+
+{% endblock %}
+
+ -->

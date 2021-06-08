@@ -1,0 +1,2 @@
+# def resize(image):
+# 	pass

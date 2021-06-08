@@ -1,0 +1,14 @@
+env
+*.pyc
+*~
+__pycache__
+db.sqlite3
+static/
+.DS_Store
+workbook/config/settings/local.py
+_db_models.xlsx
+workbook/media/**
+workbook/contract/migrations/*
+workbook/making/migrations/*
+workbook/person/migrations/*
+workbook/post/migrations/*

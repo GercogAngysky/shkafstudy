@@ -1,0 +1,24 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+  {% if person%}
+    <ul>
+ 		{% if user.is_authenticated %}
+
+        {{ person }}
+        {{ person.adress }}
+
+        <a class="btn btn-default" href="{% url 'person_update' person.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a class="btn btn-default" href="{% url 'person_delete' person.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+
+        {% endif %}
+    </ul>
+
+  {% else %}
+    <p>No date</p>
+    
+  {% endif %}
+
+{% endblock %}
+

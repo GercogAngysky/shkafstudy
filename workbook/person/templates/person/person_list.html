@@ -1,0 +1,17 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+
+  {% if person_list %}
+    <ul>
+      {% for person in person_list %}
+
+        <li>{{person.name}} <a href = "{% url 'person_detail' pk=person.pk %}">detail</a></li>
+
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No person are available.</p>
+  {% endif %}
+
+{% endblock %}

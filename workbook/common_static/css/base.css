@@ -1,0 +1,153 @@
+/*@import url("reset.css"); */
+
+html {
+    /*display: block;*/
+    height: 100%;
+    /*-webkit-text-size-adjust: 100%;*/
+    /*border: dashed;*/
+}
+
+body {
+    max-width: 70%;
+    min-width: 700px;
+    margin: auto;
+    padding: 0 6px 6px 6px;
+    font-size: 14px;
+    text-align: left;
+    border: dotted 2px red;
+}
+
+
+.container {
+    width: auto;
+    min-height: 750px;
+    align-items: center;
+    min-width: 80%;
+    border: solid 2px blue;
+    padding: 0 6px 6px 6px;
+}
+
+
+.header {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    /*padding: 5px;*/
+    margin-bottom: 15px;
+    border: solid 1px black;
+    background-color: orange;
+}
+
+.menu {
+    float: left;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between;
+    border: dotted 1px teal;
+}
+
+.menu-item {
+    border: solid 1px;
+    margin: 3px;
+}
+
+
+.logo img{
+    float: left;
+    margin-right: 50px;
+    margin-left: 10px;
+    max-width: 50px;
+}
+
+.logout img{
+    float: right;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+
+.main {
+    flex: 1 0 auto;
+    border: solid;
+    border-width: 2px;
+}
+
+/*___блок Post на главной странице___*/
+.wrap {
+    border: solid 1px red;
+    margin: 5px;
+    padding: 2px;
+}
+
+.wrap-content {
+    border: solid 2px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.post-header {
+    display: flex;
+    border: solid 1px red;
+    justify-content: space-between;
+}
+
+.post-title {
+    font-size: 14pt;
+    text-transform: uppercase;
+}
+
+.post-date {
+    border: solid 1px magenta;
+}
+
+.post-image {
+    float: left;
+    max-width: 400px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.wrap .post-edit {
+    clear: both;
+    border: solid 1px;
+    text-align: right;
+}
+
+
+/*___блок для base_list.html___*/
+
+.content_list {
+    display: flex;
+    overflow: hidden;
+    border: solid 1px magenta;
+    padding: 5px;
+    margin: 5px;
+}
+
+.content_list .thumbnail{
+    float: left;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 0 10px 0 0;
+    border: 0;
+}
+
+.content-list .description {
+
+}
+
+
+footer {
+    /*position: fixed;*/
+    /*left: 0px;*/
+    /*bottom: 0px;*/
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-color: #008080;
+    text-align: center;
+} 
